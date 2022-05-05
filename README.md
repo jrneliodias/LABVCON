@@ -8,6 +8,7 @@ básicos necessários.
 * Antonio Moises Nascimento Araújo
 * Nélio Dias Santos Júnior 
 * Profª Rejane de Barros Araújo
+* Caio César Silva de Carvalho
 
 
 ## 💻 Instalação

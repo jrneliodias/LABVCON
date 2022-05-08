@@ -26,3 +26,6 @@ Pode-se baixar também nesse [link](https://github.com/jrneliodias/LABVCON/archi
 ## 💻  Manual de utilização
 
 Temos duas interfaces no software: Estruturas PID e Sintonia PID. 
+
+1. Estruturas PID
+    

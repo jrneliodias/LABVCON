@@ -50,18 +50,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
         
    3. Configurações de simulação
          
-        Após inserir os ganhos do controlador, clica-se no botão **Configurações de Simulação** e abre-se a janela abaixo.
-
-<p align="center">
-   <img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Configura%C3%A7%C3%B5es%20de%20simula%C3%A7%C3%A3o.png">
-</p>
-<div style="display:inline-block;vertical-align:top;">
-<img src="https://loremflickr.com/320/240" alt="img"/>
-</div>
-<div style="display:inline-block;">
-<p>
-Here goes the text content.
-</p>
-</div>
-   **Tempo de Simulação** 
+ <img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Configura%C3%A7%C3%B5es%20de%20simula%C3%A7%C3%A3o.png"
+        align="right"/>
    
+ <p margin-left="20px"> Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela abaixo.  </p>

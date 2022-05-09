@@ -25,7 +25,24 @@ Pode-se baixar também nesse [link](https://github.com/jrneliodias/LABVCON/archi
 
 ## 💻  Manual de utilização
 
-Temos duas interfaces no software: Estruturas PID e Sintonia PID. 
+Para a utilização da primeira tela, devemos seguir a ordem numerada na figura abaixo. Temos duas interfaces no software: Estruturas PID e Sintonia PID. 
 
-1. Estruturas PID
+### Estruturas PID
+   
+   ![alt text](https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Estruturas%20PID%202.png)
+   
+   1. **Tipos de estruturas**
+       
+       Aqui você escolhe entre os tipos de estruturas clássicas disponíveis: 
+        
+        - PID Ideal
+        - PID Paralelo
+        - PID Serie 
+        - I+PD
+        - PI+D 
     
+   2. **Ganhos do controlador**
+  
+        Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada 
+        
+       <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">

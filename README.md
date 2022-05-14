@@ -82,4 +82,4 @@ Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho
 ![](https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Figure-Sintonia_PID.png)
    
    
-Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. em seguida, 
+Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. Em seguida, clicar em plotar planta para se verificar a resposta do sinal a um degrau unitário. Com base nela, selecionamos o método desejado para sintonia do controlador 

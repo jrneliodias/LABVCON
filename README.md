@@ -28,9 +28,9 @@ Pode-se baixar também nesse [link](https://github.com/jrneliodias/LABVCON/archi
 Para a utilização da primeira tela, devemos seguir a ordem numerada na figura abaixo. Temos duas interfaces no software: Estruturas PID e Sintonia PID. 
 
 ### Estruturas PID
-
+<div style="text-align: justify"> 
    <p align="center">
-   <img width = 900 src=https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Estruturas%20PID%202.png>
+   <img src=https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Estruturas%20PID_.png>
    </p>
    
    
@@ -54,13 +54,28 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
     <img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Configura%C3%A7%C3%B5es%20de%20simula%C3%A7%C3%A3o.png"
         align="right"/>
     <p> Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela ao lado.  </p>
-    <p><b>Tempo de Simulação:</b> Insere-se o tempo total de simulação desejada.  </p>
+    <p align=justify><b>Tempo de Simulação:</b> Insere-se o tempo total de simulação desejada.  </p>
     <p><b>Sinal de Referência:</b> Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais
        e os 3 momentos que eles irão mudar.  </p>
    <p><b>Planta:</b> Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
-   separando-os por espaço. Exemplo: s^2 + 3s + 5  será [2 3 5] </p>
+   separando-os por espaço. Exemplos</p>
+   
+   
+| Polinômio  |  Sintaxe  |
+| ------------------- | ------------------- |
+|  s^2 + s + 1 |  1 1 1 |
+| s^3 - 50s + 2  |  1 -50 2 |
+|  (s + 1)(s + 1) | 1 1 * 1 1 |
+|  (s^2 + 200)(s + 1) |  1 0 200 * 1 1 |
+   
+  
    <p><b>Atraso:</b> configura-se o atraso de transporte da planta se houver. </p>
    
-   </li>
-</ol>
-
+   
+ </ol>
+   
+### Sintonia PID
+   
+Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico e pela curva de reação assim como Choe e Coon
+   
+<img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Figure-Sintonia_PID.png"/>

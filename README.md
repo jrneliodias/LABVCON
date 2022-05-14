@@ -46,7 +46,8 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
  </ul>
 </li>                <!-- Aqui está a tag de fechamento </li> -->
    
-   
+<p> </p>  
+<p> </p>  
 <li>Ganhos do controlador
    <p>Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada </p> 
 </li>
@@ -78,4 +79,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    
 Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico e pela curva de reação assim como Choe e Coon
    
-<img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Figure-Sintonia_PID.png"/>
+![](https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Figure-Sintonia_PID.png)
+   
+   
+Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. em seguida, 

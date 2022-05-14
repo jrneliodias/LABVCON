@@ -33,24 +33,34 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    <img width = 900 src=https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Estruturas%20PID%202.png>
    </p>
    
-   1. Tipos de estruturas
-       
-      Aqui você escolhe entre os tipos de estruturas clássicas disponíveis: 
-        
-        - PID Ideal
-        - PID Paralelo
-        - PID Serie 
-        - I+PD
-        - PI+D 
-        
-    
-   2. Ganhos do controlador
-  
-        Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada 
-        
-   3. Configurações de simulação
-         
- <img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Configura%C3%A7%C3%B5es%20de%20simula%C3%A7%C3%A3o.png"
-        align="right"/>
    
- <p margin-left="20px"> Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela abaixo.  </p>
+ <ol>
+ <li>Tipos de estruturas
+    <p> Aqui você escolhe entre os tipos de estruturas clássicas disponíveis: </p>
+ <ul>
+   <li> PID Ideal</li>
+   <li> PID Paralelo</li>
+   <li> PID Serie </li>
+   <li> I+PD </li>
+   <li> PI+D </li>
+ </ul>
+</li>                <!-- Aqui está a tag de fechamento </li> -->
+   
+   
+<li>Ganhos do controlador
+   <p>Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada </p> 
+</li>
+<li>Configurações de simulação
+    <img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Configura%C3%A7%C3%B5es%20de%20simula%C3%A7%C3%A3o.png"
+        align="right"/>
+    <p> Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela ao lado.  </p>
+    <p><b>Tempo de Simulação:</b> Insere-se o tempo total de simulação desejada.  </p>
+    <p><b>Sinal de Referência:</b> Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais
+       e os 3 momentos que eles irão mudar.  </p>
+   <p><b>Planta:</b> Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
+   separando-os por espaço. Exemplo: s^2 + 3s + 5  será [2 3 5] </p>
+   <p><b>Atraso:</b> configura-se o atraso de transporte da planta se houver. </p>
+   
+   </li>
+</ol>
+

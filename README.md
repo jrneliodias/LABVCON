@@ -1,7 +1,6 @@
 # Laboratório Virtual de Engenharia de Controle - LABVCON
 
-Esse projeto tem como objetivo desenvolver um software que simula um laboratório de engenharia de controle para um usuário que não tenha acesso aos instrumentos 
-básicos necessários. 
+Esse projeto tem como objetivo desenvolver um software que simula um laboratório de engenharia de controle clássico para um usuário que não tenha acesso aos instrumentos básicos necessários. Nesse laboratório, o usuário poderá explorar as estrututuras clássicas de PID, explorar as sintonias de PID por tabela e simular essas configurações nas funções de transferências das plantas desejadas.
 
 ## 🤝 Autores
 

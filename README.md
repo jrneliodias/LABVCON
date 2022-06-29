@@ -34,7 +34,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    
    
  <ol>
- <li>Tipos de estruturas
+    <li><b>Tipos de estruturas</b>
     <p> Aqui você escolhe entre os tipos de estruturas clássicas disponíveis: </p>
  <ul>
    <li> PID Ideal</li>
@@ -47,10 +47,10 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    
 <p> </p>  
 <p> </p>  
-<li>Ganhos do controlador
+    <li><b>Ganhos do controlador</b>
    <p>Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada </p> 
 </li>
-<li>Configurações de simulação
+    <li> <b>Configurações de simulação</b>
     <img src="https://github.com/jrneliodias/Imagens_LABVCON/blob/main/Configura%C3%A7%C3%B5es%20de%20simula%C3%A7%C3%A3o.png"
         align="right"/>
     <p> Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela ao lado.  </p>

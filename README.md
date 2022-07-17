@@ -79,7 +79,6 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    
 Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico e pela curva de reação assim como Choe e Coon
    
-![Tela das Sintonias](Imagens_LABVCON\Figure-Sintonia_PID.png)
-   
+<img src="Imagens_LABVCON\Figure-Sintonia_PID.png"/>   
    
 Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. Em seguida, clicar em plotar planta para se verificar a resposta do sinal a um degrau unitário. Com base nela, selecionamos o método desejado para sintonia do controlador

@@ -92,14 +92,21 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
    
    + **Plote Função Gradiente:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
    + **Plotar Reta:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.
-   + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
-      separando-os por espaço. Exemplos
-   
+    
    + **Tempo de atraso (θ), constante de tempo (τ) e constante dos controladores em malha aberta (Kp):** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.
 
+   + **Coeficientes dos controladores:** Seleciona-se o tipo de controlador pela quantidades de componentes do PID
    
+   + **Função Resposta e Controle:** Depois que os campos anteriores estejam preenchidos, essa função irá gerar os coeficientes Kp, Td e Ti para se inserir nas estruturas PID.
+
+
+
 <br clear="right"/>
 
+
+<br/>
+<br/>
+<br/>
 
 #### 2.3) Outros Metódos
 Opção de outros metódos de sintonia de tabela. Disponibilizado Choen e Coon.

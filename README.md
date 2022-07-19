@@ -110,7 +110,7 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
    + **Variação do ganho em malha fechada:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
    + **Planta com oscilação sustentada:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.
     
-   + **Tempo de atraso (θ), constante de tempo (τ) e constante dos controladores em malha aberta (Kp):** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.
+   + **Sintonia** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.
 
    + **Coeficientes dos controladores:** Seleciona-se o tipo de controlador pela quantidades de componentes do PID
    

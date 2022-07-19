@@ -104,9 +104,6 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 <br clear="right"/>
 
 
-<br/>
-<br/>
-<br/>
 
 #### 2.3) Outros Metódos
 Opção de outros metódos de sintonia de tabela. Disponibilizado Choen e Coon.

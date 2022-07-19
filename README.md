@@ -88,7 +88,24 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 
    <img align="right" src="Imagens_LABVCON/Sintonia-curva-reacao.png" width = 385/>
    
-   Selecionando o botão **Curva de Reação**, abre-se essa tela auxiliar para parametrizar a reta tangente e se obter 
+   Selecionando o botão **Curva de Reação**, abre-se essa tela auxiliar para parametrizar  e se obter a reta tangente
+   
+   + **Plote Função Gradiente:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
+   + **Plotar Reta:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.
+    
+   + **Tempo de atraso (θ), constante de tempo (τ) e constante dos controladores em malha aberta (Kp):** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.
+
+   + **Coeficientes dos controladores:** Seleciona-se o tipo de controlador pela quantidades de componentes do PID
+   
+   + **Função Resposta e Controle:** Depois que os campos anteriores estejam preenchidos, essa função irá gerar os coeficientes Kp, Td e Ti para se inserir nas estruturas PID.
+
+<br clear="right"/>
+
+#### 2.2.2) Ziegler-Nichols - Ganho Crítico
+
+   <img align="right" src="Imagens_LABVCON/Ganho-critico.png" width = 385/>
+   
+   Selecionando o botão **Ganho Crítico**, abre-se essa tela auxiliar para parametrizar a curva de reação 
    
    + **Plote Função Gradiente:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
    + **Plotar Reta:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.

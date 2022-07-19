@@ -28,52 +28,52 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
 
 ### Estruturas PID
 
-<div style="text-align: justify"> 
-   <p align="center">
-   <img src="Imagens_LABVCON\Estruturas PID_.png">
-   </p>
-   
-   
- <ol>
-    <li><b>Tipos de estruturas</b>
-    <p> Aqui você escolhe entre os tipos de estruturas clássicas disponíveis: </p>
- <ul>
-   <li> PID Ideal</li>
-   <li> PID Paralelo</li>
-   <li> PID Serie </li>
-   <li> I+PD </li>
-   <li> PI+D </li>
- </ul>
-</li>                <!-- Aqui está a tag de fechamento </li> -->
-   
-<p> </p>  
-<p> </p>  
-    <li><b>Ganhos do controlador</b>
-   <p>Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada </p> 
-</li>
-    <li> <b>Configurações de simulação</b>
-    <img src="Imagens_LABVCON\Configurações de simulação.png"
-        align="right"/>
-    <p> Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela ao lado.  </p>
-    <p align=justify><b>Tempo de Simulação:</b> Insere-se o tempo total de simulação desejada.  </p>
-    <p><b>Sinal de Referência:</b> Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais
-       e os 3 momentos que eles irão mudar.  </p>
-   <p><b>Planta:</b> Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
-   separando-os por espaço. Exemplos</p>
-   
-   
-| Polinômio  |  Sintaxe  |
-| ------------------- | ------------------- |
-|  s^2 + s + 1 |  1 1 1 |
-| s^3 - 50s + 2  |  1 -50 2 |
-|  (s + 1)(s + 1) | 1 1 * 1 1 |
-|  (s^2 + 200)(s + 1) |  1 0 200 * 1 1 |
-   
+   <img style="padding:20px" src="Imagens_LABVCON\Estruturas PID_.png">
+ 
+   1) Tipos de estruturas <br>
+    Aqui você escolhe entre os tipos de estruturas clássicas disponíveis:
+      
+         * PID Ideal
+         * PID Paralelo
+         * PID Serie 
+         * I+PD 
+         * PI+D 
+      
+      
+   2) Ganhos do controlador <br>
+      Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada 
   
-   <p><b>Atraso:</b> configura-se o atraso de transporte da planta se houver. </p>
-   
-   
- </ol>
+   3) Configurações de simulação <br>
+    
+    
+<div style='display: flex;
+justify-content: space-between'> 
+
+<div style="padding-right:20px">
+    
+   Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela ao lado.  
+   + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  
+   + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão mudar.  
+   + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
+      separando-os por espaço. Exemplos
+         
+      | Polinômio  |  Sintaxe  |
+      | ------------------- | ------------------- |
+      |  s^2 + s + 1 |  1 1 1 |
+      | s^3 - 50s + 2  |  1 -50 2 |
+      |  (s + 1)(s + 1) | 1 1 * 1 1 |
+      |  (s^2 + 200)(s + 1) |  1 0 200 * 1 1 |
+
+   + **Atraso:** configura-se o atraso de transporte da planta se houver. 
+
+</div>
+
+<div style="width=100%" > 
+<img  src="Imagens_LABVCON\Configurações de simulação.png"
+      /> 
+</div>
+</div> 
+
    
 ### Sintonia PID
    

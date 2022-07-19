@@ -28,35 +28,31 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
 
 ### Estruturas PID
 
-   <img style="padding:20px" src="Imagens_LABVCON\Estruturas PID_.png">
+   <img  src="Imagens_LABVCON\Estruturas PID_.png">
  
-   1) Tipos de estruturas <br>
-    Aqui você escolhe entre os tipos de estruturas clássicas disponíveis:
+  #### Tipos de estruturas 
+   Aqui você escolhe entre os tipos de estruturas clássicas disponíveis:
       
-         * PID Ideal
-         * PID Paralelo
-         * PID Serie 
-         * I+PD 
-         * PI+D 
+   * PID Ideal
+   * PID Paralelo
+   * PID Serie 
+   * I+PD 
+   * PI+D 
       
       
-   2) Ganhos do controlador <br>
-      Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada 
+   #### Ganhos do controlador 
+   Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada 
   
-   3) Configurações de simulação <br>
-    
-    
-<div style='display: flex;
-justify-content: space-between'> 
-
-<div style="padding-right:20px">
-    
-   Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação</b> e abre-se a janela ao lado.  
+   #### Configurações de simulação
+  
+   <img align="right" src="Imagens_LABVCON\Configurações de simulação.png"/>
+   Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação </b> e abre-se a janela ao lado. 
+   
    + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  
-   + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão mudar.  
+   + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão       mudar.  
    + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
       separando-os por espaço. Exemplos
-         
+
       | Polinômio  |  Sintaxe  |
       | ------------------- | ------------------- |
       |  s^2 + s + 1 |  1 1 1 |
@@ -66,13 +62,11 @@ justify-content: space-between'>
 
    + **Atraso:** configura-se o atraso de transporte da planta se houver. 
 
-</div>
+<br clear="right"/>
 
-<div style="width=100%" > 
-<img  src="Imagens_LABVCON\Configurações de simulação.png"
-      /> 
-</div>
-</div> 
+
+
+
 
    
 ### Sintonia PID

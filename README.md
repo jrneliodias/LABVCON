@@ -55,10 +55,10 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
 
       | Polinômio  |  Sintaxe  |
       | ------------------- | ------------------- |
-      |  s^2 + s + 1 |  1 1 1 |
-      | s^3 - 50s + 2  |  1 -50 2 |
-      |  (s + 1)(s + 1) | 1 1 * 1 1 |
-      |  (s^2 + 200)(s + 1) |  1 0 200 * 1 1 |
+      |  s^2 + s + 1 |  1&nbsp; 1 &nbsp;1 |
+      | s^3 - 50s + 2  |  1&nbsp; -50&nbsp; 2 |
+      |  (s + 1)(s + 1) | 1&nbsp; 1&nbsp; *&nbsp; 1 &nbsp;1 |
+      |  (s^2 + 200)(s + 1) |  1&nbsp; 0 &nbsp;200&nbsp; *&nbsp; 1&nbsp; 1 |
 
    + **Atraso:** configura-se o atraso de transporte da planta se houver. 
 

@@ -120,6 +120,6 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 #### 2.3) Outros Metódos
 Opção de outros metódos de sintonia de tabela
 
-##### 2.3.1) Metódo de Choen-Coon
+#### 2.3.1) Metódo de Choen-Coon
 
 O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-Nichols usando a curva de reação. Então, por esse metódo, irá abrir a mesma janela explicada no item 2.2.1 e a diferença será no algoritmo interno que usará uma tabela diferente para calcular Kp, Td e Ti

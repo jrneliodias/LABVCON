@@ -11,6 +11,8 @@ Esse projeto tem como objetivo desenvolver um software que simula um laboratóri
 - Profª Rejane de Barros Araújo ([Lattes](http://lattes.cnpq.br/8760830024389437))
 - Caio César Silva de Carvalho ([Lattes](http://lattes.cnpq.br/0242293088447650))
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## ⚙ Instalação
 
 O softaware já é um executável, porém é necessário instalar o Matlab Runtime 2019b. O MATLAB Runtime é um conjunto autônomo de bibliotecas
@@ -23,6 +25,9 @@ Para mais informações, pode-se acessar a documentação do copilador nesse lin
 
 Feito isso, pode-se baixar o executável no botão **"Code"** na parte superior da página e em seguida clicar em **"Download Zip"**.
 Pode-se baixar também nesse [link](https://github.com/jrneliodias/LABVCON/archive/refs/heads/main.zip)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## 💻 Manual de utilização
 
@@ -66,7 +71,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
 
 <br clear="right"/>
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -100,6 +105,7 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
    + **Função Resposta e Controle:** Depois que os campos anteriores estejam preenchidos, essa função irá gerar os coeficientes Kp, Td e Ti para se inserir nas estruturas PID.
 
 <br clear="right"/>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 #### 2.2.2) Ziegler-Nichols - Ganho Crítico
 
@@ -116,6 +122,7 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
    + **Função Resposta e Controle:** Depois que os campos anteriores estejam preenchidos, essa função irá gerar os coeficientes Kp, Td e Ti para se inserir nas estruturas PID.
 
 <br clear="right"/>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 #### 2.3) Outros Metódos
 Opção de outros metódos de sintonia de tabela
@@ -123,3 +130,5 @@ Opção de outros metódos de sintonia de tabela
 #### 2.3.1) Metódo de Choen-Coon
 
 O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-Nichols usando a curva de reação. Então, por esse metódo, irá abrir a mesma janela explicada no item 2.2.1 e a diferença será no algoritmo interno que usará uma tabela diferente para calcular Kp, Td e Ti
+
+<p align="right">(<a href="#top">back to top</a>)</p>

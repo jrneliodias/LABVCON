@@ -57,7 +57,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
 
       | Polinômio  |  Sintaxe  |
       | ------------------- | ------------------- |
-      |  **s^2 + s + 1 **|  1&nbsp; 1 &nbsp;1 |
+      |  s^2 + s + 1 |  1&nbsp; 1 &nbsp;1 |
       | s^3 - 50s + 2  |  1&nbsp; -50&nbsp; 2 |
       |  (s + 1)(s + 1) | 1&nbsp; 1&nbsp; *&nbsp; 1 &nbsp;1 |
       |  (s^2 + 200)(s + 1) |  1&nbsp; 0 &nbsp;200&nbsp; *&nbsp; 1&nbsp; 1 |
@@ -107,8 +107,8 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
    
    Selecionando o botão **Ganho Crítico**, abre-se essa tela auxiliar para parametrizar a curva de reação 
    
-   + **Plote Função Gradiente:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
-   + **Plotar Reta:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.
+   + **Variação do ganho em malha fechada:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
+   + **Planta com oscilação sustentada:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.
     
    + **Tempo de atraso (θ), constante de tempo (τ) e constante dos controladores em malha aberta (Kp):** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.
 

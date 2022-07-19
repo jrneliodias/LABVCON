@@ -1,6 +1,6 @@
 # Laboratório Virtual de Engenharia de Controle - LABVCON
 
-<img src="Imagens_LABVCON\Logo_LABVCON.png"/>
+<img src="Imagens_LABVCON\Logo_LABVCON.png" />
 
 Esse projeto tem como objetivo desenvolver um software que simula um laboratório de engenharia de controle clássico para um usuário que não tenha acesso aos instrumentos básicos necessários. Nesse laboratório, o usuário poderá explorar as estrututuras clássicas de PID, explorar as sintonias de PID por tabela e simular essas configurações nas funções de transferências das plantas desejadas.
 
@@ -28,11 +28,11 @@ Pode-se baixar também nesse [link](https://github.com/jrneliodias/LABVCON/archi
 
 Para a utilização da primeira tela, devemos seguir a ordem numerada na figura abaixo. Temos duas interfaces no software: Estruturas PID e Sintonia PID.
 
-### Estruturas PID
+### 1) Estruturas PID
 
    <img  src="Imagens_LABVCON\Estruturas PID_.png">
  
-  #### 1) Tipos de estruturas 
+  #### 1.1) Tipos de estruturas 
    Aqui você escolhe entre os tipos de estruturas clássicas disponíveis:
       
    * PID Ideal
@@ -42,22 +42,22 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    * PI+D 
       
       
-   #### 2) Ganhos do controlador 
+   #### 1.2) Ganhos do controlador 
    Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada 
   
-   #### 3) Configurações de simulação
+   #### 1.3) Configurações de simulação
   
    <img align="right" src="Imagens_LABVCON\Configurações de simulação.png"/>
    Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação </b> e abre-se a janela ao lado. 
    
    + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  
-   + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão       mudar.  
+   + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão mudar.  
    + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
       separando-os por espaço. Exemplos
 
       | Polinômio  |  Sintaxe  |
       | ------------------- | ------------------- |
-      |  s^2 + s + 1 |  1&nbsp; 1 &nbsp;1 |
+      |  **s^2 + s + 1 **|  1&nbsp; 1 &nbsp;1 |
       | s^3 - 50s + 2  |  1&nbsp; -50&nbsp; 2 |
       |  (s + 1)(s + 1) | 1&nbsp; 1&nbsp; *&nbsp; 1 &nbsp;1 |
       |  (s^2 + 200)(s + 1) |  1&nbsp; 0 &nbsp;200&nbsp; *&nbsp; 1&nbsp; 1 |
@@ -71,10 +71,44 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
 
 
    
-### Sintonia PID
+### 2) Sintonia PID
    
-Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico e pela curva de reação assim como Choe e Coon
+Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico, pela curva de reação assim como Choe e Coon nas estruturas PID da tela anterior
    
-<img src="Imagens_LABVCON\Figure-Sintonia_PID.png"/>   
+<img src="Imagens_LABVCON/Sintonias_PID.png"/>   
+
+#### 2.1) Planta
+Insere-se os coeficientes da função de transferência da planta
+Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. 
+
+#### 2.2) Ziegler-Nichols
+Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
+
+#### 2.2.1) Ziegler-Nichols - Curva de Reação
+
+   <img align="right" src="Imagens_LABVCON/Sintonia-curva-reacao.png"/>
+   Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação </b> e abre-se a janela ao lado. 
    
-Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. Em seguida, clicar em plotar planta para se verificar a resposta do sinal a um degrau unitário. Com base nela, selecionamos o método desejado para sintonia do controlador
+   + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  
+   + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão       mudar.  
+   + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
+      separando-os por espaço. Exemplos
+
+      | Polinômio  |  Sintaxe  |
+      | ------------------- | ------------------- |
+      |  **s^2 + s + 1 **|  1&nbsp; 1 &nbsp;1 |
+      | s^3 - 50s + 2  |  1&nbsp; -50&nbsp; 2 |
+      |  (s + 1)(s + 1) | 1&nbsp; 1&nbsp; *&nbsp; 1 &nbsp;1 |
+      |  (s^2 + 200)(s + 1) |  1&nbsp; 0 &nbsp;200&nbsp; *&nbsp; 1&nbsp; 1 |
+
+   + **Atraso:** configura-se o atraso de transporte da planta se houver. 
+
+<br clear="right"/>
+
+
+#### 2.3) Outros Metódos
+Opção de outros metódos de sintonia de tabela. Disponibilizado Choen e Coon.
+
+
+
+Em seguida, clicar em plotar planta para se verificar a resposta do sinal a um degrau unitário. Com base nela, selecionamos o método desejado para sintonia do controlador

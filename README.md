@@ -99,11 +99,7 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
    
    + **Função Resposta e Controle:** Depois que os campos anteriores estejam preenchidos, essa função irá gerar os coeficientes Kp, Td e Ti para se inserir nas estruturas PID.
 
-
-
 <br clear="right"/>
-
-
 
 #### 2.3) Outros Metódos
 Opção de outros metódos de sintonia de tabela. Disponibilizado Choen e Coon.

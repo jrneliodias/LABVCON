@@ -118,8 +118,8 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 <br clear="right"/>
 
 #### 2.3) Outros Metódos
-Opção de outros metódos de sintonia de tabela. Disponibilizado Choen e Coon.
+Opção de outros metódos de sintonia de tabela
 
+#### 2.3.1) Metódo de Choen-Coon
 
-
-Em seguida, clicar em plotar planta para se verificar a resposta do sinal a um degrau unitário. Com base nela, selecionamos o método desejado para sintonia do controlador
+O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-Nichols usando a curva de reação. Então, por esse metódo, irá abrir a mesma janela explicada no item 2.2.1 e a diferença será no algoritmo interno que usará uma tabela diferente para calcular Kp, Td e Ti

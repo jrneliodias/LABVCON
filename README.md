@@ -86,7 +86,7 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 
 #### 2.2.1) Ziegler-Nichols - Curva de Reação
 
-   <img align="right" src="Imagens_LABVCON/Sintonia-curva-reacao.png"/>
+   <img align="right" src="Imagens_LABVCON/Sintonia-curva-reacao.png" width = 385/>
    Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação </b> e abre-se a janela ao lado. 
    
    + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  

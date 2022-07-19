@@ -77,14 +77,14 @@ Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho
    
 <img src="Imagens_LABVCON/Sintonias_PID.png"/>   
 
-#### 2.1) Planta
+#### **2.1) Planta**
 Insere-se os coeficientes da função de transferência da planta
 Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. 
 
-#### 2.2) Ziegler-Nichols
+#### **2.2) Ziegler-Nichols**
 Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 
-#### 2.2.1) Ziegler-Nichols - Curva de Reação
+#### **2.2.1) Ziegler-Nichols - Curva de Reação**
 
    <img align="right" src="Imagens_LABVCON/Sintonia-curva-reacao.png" width = 385/>
    
@@ -101,13 +101,14 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 
 <br clear="right"/>
 
-#### 2.2.2) Ziegler-Nichols - Ganho Crítico
+#### **2.2.2) Ziegler-Nichols - Ganho Crítico**
 
    <img align="right" src="Imagens_LABVCON/Ganho-critico.png" width = 385/>
    
    Selecionando o botão **Ganho Crítico**, abre-se essa tela auxiliar para parametrizar a curva de reação 
    
    + **Variação do ganho em malha fechada:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
+
    + **Planta com oscilação sustentada:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.
     
    + **Sintonia** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.

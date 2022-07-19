@@ -87,22 +87,17 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 #### 2.2.1) Ziegler-Nichols - Curva de Reação
 
    <img align="right" src="Imagens_LABVCON/Sintonia-curva-reacao.png" width = 385/>
-   Após inserir os ganhos do controlador, clica-se no botão <b>Configurações de Simulação </b> e abre-se a janela ao lado. 
    
-   + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  
-   + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão       mudar.  
+   Selecionando o botão **Curva de Reação**, abre-se essa tela auxiliar para parametrizar a reta tangente e se obter 
+   
+   + **Plote Função Gradiente:** Plota-se a curva da variação da resposta em cima do degrau para se obter o ponto de máxima derivada.
+   + **Plotar Reta:** Aqui são os controles para se movimentar a reta tangente para chegar no ponto desejado.
    + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
       separando-os por espaço. Exemplos
+   
+   + **Tempo de atraso (θ), constante de tempo (τ) e constante dos controladores em malha aberta (Kp):** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.
 
-      | Polinômio  |  Sintaxe  |
-      | ------------------- | ------------------- |
-      |  **s^2 + s + 1 **|  1&nbsp; 1 &nbsp;1 |
-      | s^3 - 50s + 2  |  1&nbsp; -50&nbsp; 2 |
-      |  (s + 1)(s + 1) | 1&nbsp; 1&nbsp; *&nbsp; 1 &nbsp;1 |
-      |  (s^2 + 200)(s + 1) |  1&nbsp; 0 &nbsp;200&nbsp; *&nbsp; 1&nbsp; 1 |
-
-   + **Atraso:** configura-se o atraso de transporte da planta se houver. 
-
+   
 <br clear="right"/>
 
 

@@ -4,6 +4,7 @@
 
 Esse projeto tem como objetivo desenvolver um software que simula um laboratório de engenharia de controle clássico para um usuário que não tenha acesso aos instrumentos básicos necessários. Nesse laboratório, o usuário poderá explorar as estrututuras clássicas de PID, explorar as sintonias de PID por tabela e simular essas configurações nas funções de transferências das plantas desejadas.
 
+
 ## 🤝 Autores
 
 - Antonio Moises Nascimento Araújo ([Lattes](http://lattes.cnpq.br/3944952251812665))

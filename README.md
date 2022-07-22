@@ -137,4 +137,4 @@ O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-
 ## 📽️ Exemplos - Links para o Youtube
 
 ### Exemplo 1
-[![](Imagens_LABVCON\LABVCON-thumb1.png)](https://www.youtube.com/watch?v=9AWOqZhEL_Y)
+[![](Imagens_LABVCON/LABVCON-thumb1.png)](https://www.youtube.com/watch?v=9AWOqZhEL_Y)

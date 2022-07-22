@@ -58,7 +58,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    
    + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  
    + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão mudar.  
-   + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
+   + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os polinômios do numerador e denominador
       separando-os por espaço. Exemplos:
 
       | Polinômio  | 
@@ -81,7 +81,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    
 Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico, pela curva de reação assim como Choe e Coon nas estruturas PID da tela anterior
    
-<img src="Imagens_LABVCON/Sintonias_PID.png"/>   
+<img src="Imagens_LABVCON/Figure-Sintonia_PID.png"/>   
 
 #### 2.1) Planta
 Insere-se os coeficientes da função de transferência da planta

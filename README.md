@@ -133,3 +133,8 @@ Opção de outros metódos de sintonia de tabela
 O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-Nichols usando a curva de reação. Então, por esse metódo, irá abrir a mesma janela explicada no item 2.2.1 e a diferença será no algoritmo interno que usará uma tabela diferente para calcular Kp, Td e Ti
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## 📽️ Exemplos - Links para o Youtube
+
+### Exemplo 1
+[![](Imagens_LABVCON\LABVCON-thumb1.png)](https://www.youtube.com/watch?v=9AWOqZhEL_Y)

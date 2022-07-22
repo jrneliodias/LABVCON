@@ -59,14 +59,14 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    + **Tempo de Simulação:** Insere-se o tempo total de simulação desejada.  
    + **Sinal de Referência:** Aqui configura-se quantas referências sua simulação irá conter. Pode-se escolher até 3 amplitudes de sinais e os 3 momentos que eles irão mudar.  
    + **Planta:** Aqui configura-se a função de transferência da planta do sistema. Especifica-se os coeficientes do polinômio do numerador e denominador
-      separando-os por espaço. Exemplos
+      separando-os por espaço. Exemplos:
 
-      | Polinômio  |  Sintaxe  |
-      | ------------------- | ------------------- |
-      |  s^2 + s + 1 |  1&nbsp; 1 &nbsp;1 |
-      | s^3 - 50s + 2  |  1&nbsp; -50&nbsp; 2 |
-      |  (s + 1)(s + 1) | 1&nbsp; 1&nbsp; *&nbsp; 1 &nbsp;1 |
-      |  (s^2 + 200)(s + 1) |  1&nbsp; 0 &nbsp;200&nbsp; *&nbsp; 1&nbsp; 1 |
+      | Polinômio  | 
+      | ------------------- | 
+      |  s^2 + s + 1 | 
+      | s^3 - 50*s + 2  |  
+      |  (s + 1)*(s + 1) | 
+      |  (s^2 + 200)*(s + 1)^3 |  
 
    + **Atraso:** configura-se o atraso de transporte da planta se houver. 
 

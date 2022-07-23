@@ -119,7 +119,7 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
     
    + **Sintonia**  Seleciona-se o tipo de controlador pela quantidades de componentes do PID
    
-   + **Função Resposta e Controle:** Depois que os campos anteriores estejam preenchidos, essa função irá gerar os coeficientes Kp, Td e Ti para se inserir nas estruturas PID.
+
 
 <br clear="right"/>
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -141,4 +141,5 @@ O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-
 ### Exemplo 2
 [![](Imagens_LABVCON/LABVCON-thumb2.png)](https://youtu.be/GoISj3Xdssc)
 ### Exemplo 3
+
 [![](Imagens_LABVCON/LABVCON-thumb3.png)](https://youtu.be/rJJ3-NmXZ0I)

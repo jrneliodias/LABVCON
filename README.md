@@ -49,7 +49,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
       
       
    #### 1.2) Ganhos do controlador 
-   Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada 
+   Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada. Deve-se atentar que Kc e Ti não pode ser 0. Ti é o denominador do integrador na lei de controle, logo a divisão por 0 é impossível.
   
    #### 1.3) Configurações de simulação
   
@@ -79,29 +79,28 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
    
 ### 2) Sintonia PID
    
-Nessa tela pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico, pela curva de reação assim como Choe e Coon nas estruturas PID da tela anterior
+Nessa tela, pode-se simular as sintonias clássicas de Ziegler-Nichols pelo ganho crítico, pela curva de reação assim como Choen e Coon nas estruturas PID da tela anterior.
    
 <img src="Imagens_LABVCON/Figure-Sintonia_PID.png"/>   
 
 #### 2.1) Planta
-Insere-se os coeficientes da função de transferência da planta
-Para utilizá-la, devemos inserir os coeficientes da função de transferência na qual desejamos controlar na seção Planta. 
+Insere-se os polinômios do numerador e denominador da função de transferência da planta. Vale ressaltar que as interfaces de sintonia apenas são acessadas quando a seção das plantas são completadas
 
 #### 2.2) Ziegler-Nichols
-Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
+Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols: Curva de reação ou Ganho Crítico. 
 
 #### 2.2.1) Ziegler-Nichols - Curva de Reação
 
    <img align="right" src="Imagens_LABVCON/Sintonia-curva-reacao.png" width = 385/>
    
-   Selecionando o botão **Curva de Reação**, abre-se essa tela auxiliar para parametrizar  e se obter a reta tangente
+   Selecionando o botão **Curva de Reação**, abre-se essa tela auxiliar para parametrizar  e se obter a reta tangente.
    
-   + **Maior t:** Slider para posicionar a parte superior da tangente
-   + **Menor t:** Slider para posicionar a parte inferior da tangente
+   + **Maior t:** Slider para posicionar a parte superior da tangente.
+   + **Menor t:** Slider para posicionar a parte inferior da tangente.
 
    + **Tempo de atraso (θ), constante de tempo (τ) e constante dos controladores em malha aberta (Kp):** Nesses campos, insere esses valores coletados do gráfico para calcular a sintonia.
 
-   + **Coeficientes dos controladores:** Seleciona-se o tipo de controlador pela quantidades de componentes do PID
+   + **Coeficientes dos controladores:** Seleciona-se o tipo de controlador pela quantidades de componentes do PID.
    
 
 <br clear="right"/>
@@ -111,13 +110,13 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 
    <img align="right" src="Imagens_LABVCON/Ganho-critico.png" width = 385/>
    
-   Selecionando o botão **Ganho Crítico**, abre-se essa tela auxiliar para parametrizar a curva de reação 
+   Selecionando o botão **Ganho Crítico**, abre-se essa tela auxiliar para parametrizar a curva de reação. 
    
-   + **Variação do ganho em malha fechada:** Aqui, controla-se Ku para que a resposta se torne uma oscilação sustentada
+   + **Variação do ganho em malha fechada:** Aqui, controla-se Ku para que a resposta se torne uma oscilação sustentada.
    
    + **Planta com oscilação sustentada:** Nessa área, deve-se coletar o período da oscilação sustentada do gráfico na tela de sintonia. Dica: o período é a distância entre duas cristas adjacentes do gráfico. Use o mouse para dar zoom, clicar e obter os valores desses pontos.
     
-   + **Sintonia**  Seleciona-se o tipo de controlador pela quantidades de componentes do PID
+   + **Sintonia**  Seleciona-se o tipo de controlador pela quantidades de componentes do PID.
    
 
 
@@ -125,11 +124,11 @@ Escolhe-se qual metódo que será utilizado para sintonia de Ziegler-Nichols
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 #### 2.3) Outros Metódos
-Opção de outros metódos de sintonia de tabela
+Opção de outros metódos de sintonia de tabela. Encontra-se disponível o método de Choen e Coon
 
-#### 2.3.1) Metódo de Choen-Coon
+#### 2.3.1) Metódo de Choen e Coon
 
-O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-Nichols usando a curva de reação. Então, por esse metódo, irá abrir a mesma janela explicada no item 2.2.1 e a diferença será no algoritmo interno que usará uma tabela diferente para calcular Kp, Td e Ti
+O método de Choen-Coon possui como valores necessários os mesmo que o Ziegler-Nichols usando a curva de reação. Então, por esse metódo, irá abrir a mesma janela explicada no item 2.2.1 e a diferença será no algoritmo interno que usará uma tabela diferente para calcular Kp, Td e Ti.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

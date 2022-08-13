@@ -1,17 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans Pro";
+}
+p{
+  /* color: rgb(90, 90, 90); */ 
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 400;
+  /* line-height: 22px;
+ */  
+}
+section{
+  width: 70%;
 }
 
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/banner.png);
-  background-position: center;
-  background-size: cover;
-  position: relative;
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
 }
 
 nav {
@@ -20,9 +27,33 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+/*  */
+/*  Header */
 
-nav img {
-  width: 150px;
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/Interface_LABVCON.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-size: 2em;
+}
+.ifpa-eca-logo{
+  display: flex;
+  align-items: center;
+  
+}
+.ifpa-eca-logo img {  
+  
+  margin: 20px;
+  width: 20%;
+}
+
+.logo-labvcon{
+  width: 30%;
+  min-width: 500px;
 }
 
 .nav-links {
@@ -35,6 +66,7 @@ nav img {
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+  text-shadow: 5px 5px 10px #000000
 }
 
 .nav-links ul li a {
@@ -45,8 +77,8 @@ nav img {
 .nav-links ul li ::after {
   content: "";
   width: 0%;
-  height: 2px;
-  background: #f44336;
+  height: 3px;
+  background: #fff;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -65,148 +97,129 @@ nav img {
   text-align: center;
 }
 .text-box h1 {
-  font-size: 62px;
+  font-family: "Poppins", sans-serif;
+  font-size: 200px;
+  text-shadow: 5px 5px 10px #000000
 }
 .text-box p {
   margin: 10px 0 40px;
-  font-size: 14px;
+  font-size: 50px;
   color: #fff;
+  text-shadow: 5px 5px 10px #000000
+
 }
 
-.hero-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 12px 34px;
-  font-size: 13px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-}
-
-.hero-btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
-  transition: 1s;
-}
 nav .fa {
   display: none;
 }
 nav .fa-solid {
   display: none;
 }
-@media (max-width: 700px) {
-  .text-box h1 {
-    font-size: 50px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: #f44336;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
 
-  nav .fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: poiner;
-  }
-  nav .fa-solid {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-}
-
-/* ------ Course -----*/
-.course {
-  width: 80%;
+/* Resumo */
+.resumo{
+  /* width: 70%; */
   margin: auto;
-  text-align: center;
+  text-align: justify;
   padding-top: 100px;
 }
 
-h1 {
-  font-size: 36 px;
+/*  */
+/* ------ Autores -----*/
+/*  */
+
+.autores {
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+section h1 {
+  font-size: 60px;
   font-weight: 600;
   text-align: center;
 }
 
-p {
-  color: #777;
-  font-size: 14px;
-  padding: 10px;
-  font-weight: 300;
-  line-height: 22px;
-}
-.row {
-  margin-top: 5%;
+.autores row {
   display: flex;
-  justify-content: space-between;
+ 
+}
+.row-autor{
+  display: flex;
+  width: 50%;  
+  flex-wrap: nowrap;
+}
+.autor {
+  width: 50%; 
+  border-radius: 20px;
+  margin: 15px;
+  /* align-items: space-around; */
+  /* box-sizing: border-box; */
+  overflow: hidden;
+  /* flex-grow: 1; */
 }
 
-.course-col {
-  flex-basis: 31%;
-  background: #fff3f3;
-
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
+.autor img {
+  width: 100%;
+  display: block;
 }
 
-.course-col p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-}
 
-.course-col:hover {
+.autor:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
 
-@media (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
+
+/* ------ Instalação ------ */
+.instalacao{
+  margin:auto;
+  text-align: justify;
+  padding-top: 50px;
+}
+.link{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
 }
 
-/* ------ Campus ------ */
-.campus{
-  width: 80%;
-  margin:auto;
-  text-align: center;
-  padding-top: 5-px;
+.instalacao a:link,.instalacao a:visited {
+  margin: 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid #005c4b;
+  padding: 10px 30px;
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 400;
 }
-.campus-col {
+
+
+
+.instalacao a:hover, .instalacao a:active {
+  background-color: #005c4b;
+  color: white;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+ 
+}
+
+
+.instalacao-col {
   flex-basis: 32%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
-.campus-col img {
+.instalacao-col img {
   width: 100%;
   display: block;
 }
@@ -308,4 +321,93 @@ h3 {
 }
 .testimonial-col h3{
   text-align: left;
+}
+
+
+@media (max-width: 700px) {
+  section{
+    width: 80%;
+  }
+  section h1{
+    font-size: 2.5em;
+  }
+
+  p{
+    /* color: rgb(90, 90, 90); */ 
+    font-size:1em;
+    padding: 2px 2px;
+    font-weight: 400;
+    /* line-height: 22px;
+   */  
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .autor{
+   margin: 5px;
+  }
+
+  .row-autor{
+    display: flex;
+    width: 100%;
+  }
+
+  .ifpa-eca-logo img {  
+  
+    margin: 10px;
+    width: 20%;
+      
+  }
+
+  .instalacao a:link{
+    /* color: rgb(90, 90, 90); */ 
+    font-size: 12px;
+    padding: 10px;
+    /* line-height: 22px;
+   */  
+  }
+  .logo-labvcon{
+    width: 70vw;
+    min-width: 20%;
+  }
+  .text-box h1 {
+    font-size:60px;
+  }
+  .text-box p {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #005c4b;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: poiner;
+  }
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
 }

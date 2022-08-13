@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\Desenvolvimento Web\\Node"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LABVCON"
+	}
+}

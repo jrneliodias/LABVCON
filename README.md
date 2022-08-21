@@ -49,7 +49,7 @@ Para a utilização da primeira tela, devemos seguir a ordem numerada na figura 
       
       
    #### 1.2) Ganhos do controlador 
-   Na parte 2, devemos inserir os coeficientes Ki, Kc e Kd dos controladores na estrutura selecionada. Deve-se atentar que Kc e Ti não pode ser 0. Ti é o denominador do integrador na lei de controle, logo a divisão por 0 é impossível.
+   Na parte 2, devemos inserir os coeficientes K<sub>c</sub> , T<sub>i</sub> e T<sub>d</sub> dos controladores na estrutura selecdonada. Deve-se atentar que  K<sub>c</sub> , T<sub>i</sub> não pode ser 0. Ti é o denominador do integrador na lei de controle, logo a divisão por 0 é impossível.
   
    #### 1.3) Configurações de simulação
   

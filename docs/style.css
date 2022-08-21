@@ -3,22 +3,15 @@
   padding: 0;
   font-family: "Source Sans Pro";
 }
-p{
-  /* color: rgb(90, 90, 90); */ 
+p,
+li {
   font-size: 30px;
   padding: 10px;
   font-weight: 400;
-  /* line-height: 22px;
- */  
 }
-section{
+section {
   width: 70%;
-}
-
-h3 {
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
+  margin: 100px;
 }
 
 nav {
@@ -40,18 +33,16 @@ nav {
   position: relative;
   font-size: 2em;
 }
-.ifpa-eca-logo{
+.ifpa-eca-logo {
   display: flex;
   align-items: center;
-  
 }
-.ifpa-eca-logo img {  
-  
+.ifpa-eca-logo img {
   margin: 20px;
   width: 20%;
 }
 
-.logo-labvcon{
+.logo-labvcon {
   width: 30%;
   min-width: 500px;
 }
@@ -66,7 +57,7 @@ nav {
   display: inline-block;
   padding: 8px 12px;
   position: relative;
-  text-shadow: 5px 5px 10px #000000
+  text-shadow: 5px 5px 10px #000000;
 }
 
 .nav-links ul li a {
@@ -99,14 +90,13 @@ nav {
 .text-box h1 {
   font-family: "Poppins", sans-serif;
   font-size: 200px;
-  text-shadow: 5px 5px 10px #000000
+  text-shadow: 5px 5px 10px #000000;
 }
 .text-box p {
   margin: 10px 0 40px;
   font-size: 50px;
   color: #fff;
-  text-shadow: 5px 5px 10px #000000
-
+  text-shadow: 5px 5px 10px #000000;
 }
 
 nav .fa {
@@ -117,7 +107,7 @@ nav .fa-solid {
 }
 
 /* Resumo */
-.resumo{
+.resumo {
   /* width: 70%; */
   margin: auto;
   text-align: justify;
@@ -131,32 +121,31 @@ nav .fa-solid {
 .autores {
   margin: auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 section h1 {
-  font-size: 60px;
+  font-size: 4em;
   font-weight: 600;
   text-align: center;
 }
 
 .autores row {
   display: flex;
- 
 }
-.row-autor{
+.row-autor {
   display: flex;
-  width: 50%;  
+  width: 50%;
   flex-wrap: nowrap;
 }
 .autor {
-  width: 50%; 
+  position: relative;
+  width: 50%;
   border-radius: 20px;
   margin: 15px;
-  /* align-items: space-around; */
-  /* box-sizing: border-box; */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  /* flex-grow: 1; */
+  transition: 0.5s;
 }
 
 .autor img {
@@ -164,41 +153,65 @@ section h1 {
   display: block;
 }
 
-
 .autor:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-20px);
   transition: 0.5s;
 }
 
-
-/* ------ Instalação ------ */
-.instalacao{
-  margin:auto;
-  text-align: justify;
-  padding-top: 50px;
+.details {
+  position: absolute;
+  bottom: -130px;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 120px;
+  padding-top: 10px;
+  font-size: 25px;
+  transition: 0.5s;
+  opacity: 0.9;
 }
-.link{
+.details h2 {
+  padding: 0 10px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+.autor:hover .details {
+  transform: translateY(-125px);
+}
+/* ------ Instalação ------ */
+.instalacao,
+.manual {
+  margin: auto;
+  text-align: justify;
+  padding-top: 100px;
+}
+.link {
   display: flex;
   justify-content: center;
   font-size: 2rem;
 }
 
-.instalacao a:link,.instalacao a:visited {
+.instalacao a:link,
+.instalacao a:visited {
   margin: 10px;
   background-color: white;
   color: black;
   border: 2px solid #005c4b;
   padding: 10px 30px;
-  /* text-align: center; */
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
   font-weight: 400;
 }
 
-
-
-.instalacao a:hover, .instalacao a:active {
+.instalacao a:hover,
+.instalacao a:active {
   background-color: #005c4b;
   color: white;
 }
@@ -208,178 +221,304 @@ section h1 {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
- 
 }
 
+/* ------ Manual de Instruções ------ */
+.subsection{
+  margin: 50px 10px 50px 10px;
+  display: flex;
+  flex-direction: column;
+}
 
-.instalacao-col {
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
+.estrutura-pid-img{
+  margin: 40px;
+  align-self: center;
+  width: 90%;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 20px;
   overflow: hidden;
 }
-.instalacao-col img {
+.estrutura-pid img{
+  margin: 0;
   width: 100%;
-  display: block;
-}
-.layer {
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
 }
 
-.layer:hover {
-  background: rgba(226, 0, 0, 0.7);
+.manual h2 {
+  font-size: 3em;
+}
+.manual h3 {
+  font-size: 2.5em;
 }
 
-.layer h3 {
-  width: 100%;
-  font-weight: 500;
-  color: #fff;
-  font-size: 26px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
 
+.tipos-estruturas,
+.configuracoes-simulacao {
+  padding: 50px 0;
 }
-
-.layer:hover h3{
-  bottom: 49%;
-  opacity: 1;
-}
-
-/*  Facilities */
-
-.facilities{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
-.facilities-col{
-  flex-basis: 31%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
-  
-}
-
-.facilities-col img{
-  width: 100%;
-  border-radius: 10px;
-}
-
-.facilities-col p{
-  padding: 0;
-  
-}
-.facilities-col h3{
-  margin-top: 16px;
-  margin-bottom: 15px;
-  text-align: left;
-
-}
-
-.testimonials{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-
-.testimonial-col{
-  flex-basis: 44%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
-  background: #fff3f3;
-  padding: 25px;
-  cursor: pointer;
+.tipos-estruturas ul {
   display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 20px;
+}
+.tipos-estruturas ul li {
+  margin: 0 50px;
+  padding: 20px;
+  list-style-type: none;
+  border: solid 1px;
+  background-color: #005c4b;
+  color: white;
+  border-radius: 10px;
+}
+.tipos-estruturas span {
+  color: red;
+}
+.tipos-estruturas li:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.duas-colunas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+.texto-conf li{
+  
+  margin: 0px 50px 30px 0px;
+  list-style-type: none;
   
 }
 
-.testimonial-col img{
-  height: 40px;
-  margin-left: 5px;
-  margin-right: 30px;
-  border-radius: 50%;
+.imagem-conf img{
+  border-radius: 50px;
+  width: 80%;
+}
+table{
+  margin: 50px 3px;
+  border-collapse: collapse;
+}
+tr{
+  background-color: lightgray;
+}
+table, th, td {
+  border: 1px solid rgb(119, 119, 119);
+}
+tr {background-color: #ffffff;}
+
+th,td{
+  padding: 20px;
 }
 
-.testimonial-col p{
-  padding: 0;
-  text-align: justify;
-}
-.testimonial-col h3{
-  text-align: left;
-}
-
-
-@media (max-width: 700px) {
-  section{
+@media (min-width: 600px) and (max-width: 1800px) {
+  section {
     width: 80%;
   }
-  section h1{
+  section h1 {
     font-size: 2.5em;
   }
 
-  p{
-    /* color: rgb(90, 90, 90); */ 
-    font-size:1em;
+  p {
+    /* color: rgb(90, 90, 90); */
+    font-size: 1.5em;
     padding: 2px 2px;
     font-weight: 400;
     /* line-height: 22px;
-   */  
+   */
   }
-  .row{
+
+  .details {
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    height: 90px;
+  }
+
+  .job-title {
+    padding: 0 5px 5px 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+  }
+  .row {
     display: flex;
     flex-direction: column;
   }
 
-  .autor{
-   margin: 5px;
+  .autor {
+    margin: 5px;
   }
 
-  .row-autor{
+  .row-autor {
     display: flex;
     width: 100%;
   }
 
-  .ifpa-eca-logo img {  
-  
+  .ifpa-eca-logo img {
     margin: 10px;
     width: 20%;
-      
   }
 
-  .instalacao a:link{
-    /* color: rgb(90, 90, 90); */ 
-    font-size: 12px;
+  .instalacao a:link {
+    /* color: rgb(90, 90, 90); */
+    font-size: 1.4rem;
     padding: 10px;
     /* line-height: 22px;
-   */  
+   */
   }
-  .logo-labvcon{
+  .logo-labvcon {
+    width: 50vw;
+    min-width: 20%;
+  }
+  .text-box h1 {
+    font-size: 5em;
+  }
+  .text-box p {
+    font-size: 2empx;
+  }
+  .nav-links ul li {
+    display: block;
+    font-size: medium;
+  }
+  .nav-links {
+    position: absolute;
+    background: #005c4b;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: poiner;
+  }
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    width: 80%;
+  }
+  section h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    /* color: rgb(90, 90, 90); */
+    font-size: 1em;
+    padding: 2px 2px;
+    font-weight: 400;
+    /* line-height: 22px;
+   */
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .autor {
+    position: inherit;
+    margin: 5px;
+    width: 80%;
+  }
+
+  .row-autor {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details {
+    height: 10px;
+  }
+
+  .ifpa-eca-logo img {
+    margin: 10px;
+    width: 20%;
+  }
+
+  .autor {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .autor img {
+    width: 100%;
+    display: block;
+  }
+
+  .autor:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
+
+  .details {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    padding-top: 10px;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  .details h2 {
+    padding: 0 10px;
+  }
+
+  .job-title {
+    font-size: 20px;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+  }
+  .autor:hover .details {
+    transform: translateY(0px);
+  }
+
+  .instalacao a:link {
+    /* color: rgb(90, 90, 90); */
+    font-size: 1rem;
+    padding: 10px;
+    /* line-height: 22px;
+   */
+  }
+  .logo-labvcon {
     width: 70vw;
     min-width: 20%;
   }
   .text-box h1 {
-    font-size:60px;
+    font-size: 60px;
   }
   .text-box p {
     font-size: 20px;
   }
   .nav-links ul li {
     display: block;
+    font-size: medium;
   }
   .nav-links {
     position: absolute;

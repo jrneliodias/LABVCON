@@ -232,7 +232,10 @@ section h1 {
   display: flex;
   flex-direction: column;
 }
+.subsubsection{
+margin: 0px 20px;
 
+}
 .estrutura-pid-img{
   width: 100%;
   display: flex;
@@ -254,7 +257,9 @@ section h1 {
   font-size: 2.5em;
 }
 
-
+.manual h4 {
+  font-size: 2em;
+}
 .tipos-estruturas,
 .configuracoes-simulacao {
   padding: 50px 0;
@@ -314,9 +319,7 @@ th,td{
   padding: 20px;
 }
 
-.subsubsection{
 
-}
 
 @media (min-width: 600px) and (max-width: 1800px) {
   section {

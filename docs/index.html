@@ -31,10 +31,10 @@
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="">AUTORES</a></li>
-            <li><a href="">MANUAL</a></li>
-            <li><a href="">VIDEOS</a></li>
-            <li><a href="">CONTATO</a></li>
+            <li><a href="#autores">AUTORES</a></li>
+            <li><a href="#manual">MANUAL</a></li>
+            <li><a href="#videos">VIDEOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
           </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -58,7 +58,7 @@
     </section>
 
     <!-- Autores -->
-    <section class="autores">
+    <section class="autores" id="autores">
       <h1>Autores</h1>
       <p>Apresentação dos autores do projeto LABVCON.</p>
       <div class="row">
@@ -162,7 +162,7 @@
     </section>
 
     <!-- Manual de instruções  -->
-    <section class="manual">
+    <section class="manual" id="manual">
       <h1>Manual de instruções</h1>
 
       <br />
@@ -202,11 +202,13 @@
               >i</sub
             >
             e T<sub>d</sub> dos controladores na estrutura selecdonada.
-            <span>
-              Deve-se atentar que K<sub>c</sub> , T<sub>i</sub> não pode ser 0.
-              Ti é o denominador do integrador na lei de controle, logo a
-              divisão por 0 é impossível.
-            </span>
+            <b
+              ><span>
+                Deve-se atentar que K<sub>c</sub> , T<sub>i</sub> não pode ser
+                0. T<sub>i</sub> é o denominador do integrador na lei de controle, logo a
+                divisão por 0 é impossível.
+              </span>
+            </b>
           </p>
         </div>
 
@@ -388,8 +390,12 @@
           </div>
         </div>
       </div>
-      <div class="tutorial">
+      <div class="tutorial" id="videos">
         <h2>Tutoriais</h2>
+        <p>
+          Nessa seção temos alguns exemplos mostrando mais detalhes da
+          plataforma
+        </p>
         <div class="video-container">
           <iframe
             width="560"
@@ -426,7 +432,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="contato">
       <div class="footer-column">
         <p>Desenvolvido por Nélio Dias</p>
         <div class="footer-icons">
@@ -442,6 +448,25 @@
 
     <!--  Javascript  for Toogle menu-->
     <script>
+      var menuItens = document.querySelectorAll('a[href^="#"]');
+      menuItens.forEach((item) => {
+        item.addEventListener("click", scrollToIdOnClick);
+      });
+
+      function scrollToIdOnClick(event) {
+        event.preventDefault();
+        const element = event.target;
+        const sectionTo = getScrollTopByHref(element);
+
+        window.scroll({
+          top: sectionTo,
+          behavior: "smooth",
+        });
+      }
+      function getScrollTopByHref(element) {
+        const id = element.getAttribute("href");
+        return document.querySelector(id).offsetTop;
+      }
       var navLinks = document.getElementById("navLinks");
       function showMenu() {
         navLinks.style.right = "0";

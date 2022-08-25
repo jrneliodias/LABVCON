@@ -218,7 +218,11 @@
             Após inserir os ganhos do controlador, clica-se no botão
             Configurações de Simulação e abre-se a janela ao lado.
           </p>
+          
           <div class="duas-colunas">
+            <div class="imagem-conf">
+              <img src="images/Conf-Estruturas-PID.svg" alt="" />
+            </div>
             <div class="texto-conf">
               <ul>
                 <li>
@@ -234,13 +238,14 @@
                   <b> Planta</b>: Aqui configura-se a função de transferência da
                   planta do sistema. Especifica-se os polinômios do numerador e
                   denominador separando-os por espaço. Exemplos:
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Polinômio</th>
-                      </tr>
-                    </thead>
-                    <tbody>
+                  <div class="tabela">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Polinômio</th>
+                        </tr>
+                      </thead>
+                      <tbody>
                       <tr>
                         <td>s^2 + s + 1</td>
                       </tr>
@@ -255,6 +260,7 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>
                 </li>
                 <li>
                   <b>Atraso</b>: configura-se o atraso de transporte da planta
@@ -262,9 +268,7 @@
                 </li>
               </ul>
             </div>
-            <div class="imagem-conf">
-              <img src="images/Conf-Estruturas-PID.svg" alt="" />
-            </div>
+            
           </div>
         </div>
       </div>
@@ -305,6 +309,9 @@
               para parametrizar e se obter a reta tangente.
             </p>
             <div class="duas-colunas">
+              <div class="imagem-conf">
+                <img src="images/ZN-curva-reacao.svg" alt="" />
+              </div>
               <div class="texto-conf">
                 <ul>
                   <li>
@@ -328,9 +335,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="imagem-conf">
-                <img src="images/ZN-curva-reacao.svg" alt="" />
-              </div>
+              
             </div>
           </div>
           <!-- 2.2.2) Ziegler-Nichols - Ganho Críticoo -->
@@ -342,6 +347,9 @@
               para parametrizar a curva de reação.
             </p>
             <div class="duas-colunas">
+              <div class="imagem-conf">
+                <img src="images/ZN-ganho-critico.svg" alt="" />
+              </div>
               <div class="texto-conf">
                 <ul>
                   <li>
@@ -363,9 +371,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="imagem-conf">
-                <img src="images/ZN-ganho-critico.svg" alt="" />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -391,7 +397,7 @@
         </div>
       </div>
       <div class="tutorial" id="videos">
-        <h2>Tutoriais</h2>
+        <h1>Tutoriais</h1>
         <p>
           Nessa seção temos alguns exemplos mostrando mais detalhes da
           plataforma
@@ -469,10 +475,14 @@
       }
       var navLinks = document.getElementById("navLinks");
       function showMenu() {
-        navLinks.style.right = "0";
+        navLinks.style.display = "block";
+        setTimeout(()=>{navLinks.style.right = "0"},10)
+        ;
       }
       function hideMenu() {
         navLinks.style.right = "-200px";
+        setTimeout(()=>{navLinks.style.display = "none";},800)
+        
       }
     </script>
   </body>
